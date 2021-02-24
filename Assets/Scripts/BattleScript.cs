@@ -242,13 +242,6 @@ public class BattleScript : MonoBehaviourPun
     }
 
 
-
-
-
-
-
-
-
     public List<GameObject> pooledObjects;
     public int amountToPool = 8;
     public GameObject CollisionEffectPrefab;
