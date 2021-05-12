@@ -30,7 +30,7 @@ public class ARPlacementManager : MonoBehaviour
         Vector3 centreOfScreen = new Vector3(Screen.width / 2, Screen.height / 2);
 
         Ray ray = aRCamera.ScreenPointToRay(centreOfScreen);
-        if (m_ARRaycastManager.Raycast(ray, raycast_Hits, TrackableType.PlaneWithinPolygon))
+        if (m_ARRaycastManager.Raycast(ray, raycast_Hits, TrackableType.Planes))
         {
             //Intersection
             Pose hitPose = raycast_Hits[0].pose;
